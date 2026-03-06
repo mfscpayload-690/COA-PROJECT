@@ -200,15 +200,29 @@ The experiment successfully illustrates how processor architecture influences pr
 
 # 10. Screenshots Captured
 
-The following screenshots were collected during the experiment:
+The following screenshots were collected during the experiment.
 
-1. RISC-V Assembly Code in Ripes Editor
-2. Single Cycle Processor Architecture
-3. Single Cycle Execution Statistics
-4. 5-Stage Processor Architecture
-5. 5-Stage Execution Statistics
+---
 
-These screenshots verify both the correctness of execution and the recorded performance metrics.
+### Assembly Code — Array Max & Min
+
+![Array Max & Min RISC-V Assembly code in Ripes](Array-max-min_ASSEMBLY_code.png)
+
+---
+
+### Single Cycle RISC-V Processor
+
+![Single Cycle RISC-V Processor — Array Min/Max execution (architecture view)](Single_Cycle_RISC-V_Array-Min-Max.png)
+
+![Single Cycle RISC-V Processor — Array Min/Max execution (statistics)](<Single_Cycle_RISC-V_Array-Min-Max(2).png>)
+
+---
+
+### 5-Stage Pipelined RISC-V Processor
+
+![5-Stage Pipelined RISC-V Processor — Array Min/Max execution (architecture view)](5-stage_processor_RISC-V_Array-Min-Max.png)
+
+![5-Stage Pipelined RISC-V Processor — Array Min/Max execution (statistics)](<5-stage_processor_RISC-V_Array-Min-Max(2).png>)
 
 ---
 
