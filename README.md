@@ -1,81 +1,56 @@
-# 🖥️ RISC-V Assembly Lab Programs
+# 🖥️ RISC-V Assembly Lab — Performance Analysis
 
-> A collection of RISC-V assembly programs written as part of the **Computer Organization & Architecture (COA)** course lab sessions.  
-> Each program is paired with its assembled binary (`.bin`) output.
-
----
-
-## 📝 Programs Overview
-
-### 🔢 Basic Arithmetic Operations
-
-**File:** `27-02-2026/basic arithmetic operations.s`  
-Loads two immediate values into registers and performs a **subtraction** operation.  
-Demonstrates: `addi`, `sub`
+> RISC-V assembly programs and performance analysis reports for the **Computer Organization & Architecture (COA)** course (PBCST404).  
+> Each experiment includes the assembly source (`.s`), assembled binary (`.bin`), equivalent C program, a detailed report, and Ripes simulator screenshots.
 
 ---
 
-### 🔀 Branching
+## 👥 Group 5
 
-**File:** `27-02-2026/branching.s`  
-Compares two register values and **branches** to a label based on a less-than condition. Demonstrates conditional and unconditional control flow.  
-Demonstrates: `addi`, `blt`, `jal`, `nop`
+<a href="https://github.com/ahammedhalim"><img src="https://github.com/ahammedhalim.png" width="80" style="border-radius:50%" alt="Ahammed Halim"/></a>
+<a href="https://github.com/anakhashaju55"><img src="https://github.com/anakhashaju55.png" width="80" style="border-radius:50%" alt="Anakha Shaju"/></a>
+<a href="https://github.com/mfscpayload-690"><img src="https://github.com/mfscpayload-690.png" width="80" style="border-radius:50%" alt="Aravind Lal"/></a>
+<a href="https://github.com/Madhavs225"><img src="https://github.com/Madhavs225.png" width="80" style="border-radius:50%" alt="Madhav S"/></a>
 
----
-
-### 💾 Load Word from Base Address
-
-**File:** `27-02-2026/Load Word from Base Address.s`  
-Stores a value to a memory address and loads it back into a register. Demonstrates basic **memory read/write** using base-address + offset.  
-Demonstrates: `addi`, `sw`, `lw`
+**[Ahammed Halim](https://github.com/ahammedhalim)** · **[Anakha Shaju](https://github.com/anakhashaju55)** · **[Aravind Lal](https://github.com/mfscpayload-690)** · **[Madhav S](https://github.com/Madhavs225)**
 
 ---
 
-### ➕ Sum of First N Natural Numbers
+## 📂 Experiments
 
-**File:** `27-02-2026/Sum of First N Natural Numbers.s`  
-Iteratively computes the **sum of the first N natural numbers** using a loop with a decrement-and-branch pattern.  
-Demonstrates: `addi`, `add`, `bne` (loop construct)
+### 📦 Array Maximum & Minimum
 
----
+Finds the maximum and minimum values in an integer array. Includes performance comparison between Single Cycle and 5-Stage Pipelined RISC-V processors.
 
-### 📦 Array Handling
-
-**File:** `27-02-2026/Array Handling.s`  
-Iterates over a 5-element integer array stored at a base memory address and computes the **sum of all elements**.  
-Demonstrates: `addi`, `lw`, `add`, `blt` (array traversal with pointer arithmetic)
+| File | Description |
+|------|-------------|
+| [`Array-max-min.s`](Array_Maximum_And_Minimum/Array-max-min.s) | RISC-V assembly source |
+| [`Array-max-min.bin`](Array_Maximum_And_Minimum/Array-max-min.bin) | Assembled binary |
+| [`array_max_min.c`](Array_Maximum_And_Minimum/array_max_min.c) | Equivalent C program |
+| [`README.md`](Array_Maximum_And_Minimum/README.md) | Full performance analysis report with screenshots |
 
 ---
 
 ## 🛠️ Tools Used
 
-| Tool  | Purpose |
-|-------|---------|
-| [Ripes](https://github.com/mortbopet/Ripes) | Primary tool — visual RISC-V assembler, simulator, and pipeline visualizer used to write, assemble, and run all programs |
-| [Git](https://git-scm.com/) | Version control — tracking changes across lab sessions |
+| Tool | Purpose |
+|------|---------|
+| [Ripes](https://github.com/mortbopet/Ripes) | RISC-V assembler, simulator & pipeline visualizer — used to write, assemble, execute, and analyze all programs |
+| [Git](https://git-scm.com/) | Version control |
 
 ---
 
 ## 🚀 Getting Started with Ripes
 
 1. Download and install **[Ripes](https://github.com/mortbopet/Ripes/releases)**
-2. Open Ripes and go to the **Editor** tab
+2. Open Ripes → **Editor** tab
 3. Load or paste any `.s` file from this repo
-4. Click **Assemble** to compile
+4. Click **Assemble**
 5. Use the **Processor** tab to step through execution and inspect registers & memory
-
----
-
-## 📅 Lab Session Log
-
-| Date         | Topics Covered                                                              |
-|--------------|-----------------------------------------------------------------------------|
-| 20-02-2026   | *(files pending)*                                                           |
-| 27-02-2026   | Arithmetic ops, Branching, Memory load/store, Loops, Array traversal        |
-| 06-03-2026   | *(files pending)*                                                           |
+6. Switch between **Single Cycle** and **5-Stage Pipelined** processors to compare performance
 
 ---
 
 ## 📄 License
 
-This repository is for **academic/educational purposes** only as part of a university COA lab coursework.
+This repository is for **academic/educational purposes** only as part of university COA lab coursework.
